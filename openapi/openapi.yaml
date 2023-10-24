@@ -5,7 +5,7 @@ info:
   termsOfService: https://example.com/terms/
   contact:
     email: john@springframework.guru
-    url: http://example.com/contact
+    url: http://springframework.guru/contact
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
@@ -18,11 +18,11 @@ info:
     # Introduction
 
     guesswork in calling the service.
-# tags:
+tags:
 #   - name: Echo
 #     description: Example echo operations.
-#   - name: User
-#     description: Operations about users.
+  - name: User
+    description: Operations about users.
 #   - name: Tag
 #     description: This is a tag description.
 servers:
@@ -31,7 +31,7 @@ servers:
       tenant:
         default: www
         description: Your tenant id
-  - url: https://example.com/api/v1
+  - url: https://springframework.guru/api/v1
 paths:
   /users/{username}:
     $ref: paths/users_{username}.yaml
