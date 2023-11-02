@@ -19,8 +19,8 @@ info:
 
     guesswork in calling the service.
 tags:
-#   - name: Echo
-#     description: Example echo operations.
+  - name: Customer
+    description: Customer operations
   - name: User
     description: Operations about users.
 #   - name: Tag
@@ -35,12 +35,16 @@ servers:
 paths:
   /users/{username}:
     $ref: paths/users_{username}.yaml
+  /v1/customers:
+    $ref: paths/v1/customers.yaml  
   # /echo:
   #   $ref: paths/echo.yaml
   # /pathItem:
   #   $ref: paths/pathItem.yaml
   # /pathItemWithExamples:
   #   $ref: paths/pathItemWithExamples.yaml
+security: 
+  -  basic_auth: []  
 components:
   securitySchemes:
     main_auth:
