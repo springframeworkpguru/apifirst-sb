@@ -28,4 +28,9 @@ properties:
     type: string
     description: Zip Code 
     minLength: 5
-    maxLength: 10         
+    maxLength: 10        
+required: 
+  - addressLine1
+  - city
+  - state
+  - zip     
