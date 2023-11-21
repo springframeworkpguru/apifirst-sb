@@ -17,7 +17,7 @@ info:
 tags:
   - name: Customer
     description: Customer operations
-  - name: Products
+  - name: Product
     description: Product operations   
   - name: Order
     description: Operations about orders.

@@ -1,6 +1,6 @@
 get: 
   tags: 
-    -  Product 
+    -  Product
   summary: Get a product by ID
   description:  |
     Get a product by ID
