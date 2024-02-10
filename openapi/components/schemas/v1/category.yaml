@@ -31,4 +31,3 @@ properties:
 required:
   - category
   - description
-  - category_code
