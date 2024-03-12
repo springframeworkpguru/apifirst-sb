@@ -9,9 +9,9 @@ properties:
     name:  
       $ref: name.yaml
     shipToAddress:
-      $ref: address.yaml  
+      $ref: customer_address_patch.yaml  
     billToAddress:
-      $ref: address.yaml
+      $ref: customer_address_patch.yaml
     email:
       type: string
       maxLength: 255
