@@ -10,8 +10,10 @@ properties:
       $ref: name.yaml
     shipToAddress:
       $ref: customer_address_patch.yaml  
+      nullable: true
     billToAddress:
       $ref: customer_address_patch.yaml
+      nullable: true
     email:
       type: string
       maxLength: 255
