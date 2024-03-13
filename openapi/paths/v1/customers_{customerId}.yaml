@@ -73,7 +73,7 @@ delete:
     -  Customer
   summary: Delete a customer by ID
   description:  |
-    Patch a customer by ID
+    Delete a customer by ID
   operationId: deleteCustomerById
   parameters: 
     - $ref: ../../components/parameters/customer_id.yaml

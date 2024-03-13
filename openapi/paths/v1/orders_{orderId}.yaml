@@ -61,3 +61,19 @@ patch:
             $ref: ../../components/schemas/v1/order.yaml
     '400':
       description: Bad Request
+delete:     
+  tags: 
+    -  Order
+  summary: Delete a order by ID
+  description:  |
+    Patch a order by ID
+  operationId: deleteOrderById
+  parameters: 
+    - $ref: ../../components/parameters/order_id.yaml
+  responses:
+    '204':
+      description: No Content
+    '400':
+      description: Bad Request 
+    '404':
+      description: Not Found    
