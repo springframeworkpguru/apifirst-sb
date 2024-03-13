@@ -5,13 +5,7 @@ get:
   description: Get Order by id
   operationId: getOrderById
   parameters: 
-    - name: orderId
-      in: path
-      description: The ID of the order to retrieve
-      required: true
-      schema: 
-        type: string
-        format: uuid
+    - $ref: ../../components/parameters/order_id.yaml
   responses:
     '200':
       description: successful operation
@@ -30,13 +24,7 @@ put:
   description: Update Order
   operationId: updateOrder
   parameters: 
-    - name: orderId
-      in: path
-      description: The ID of the order to update
-      required: true
-      schema: 
-        type: string
-        format: uuid
+    - $ref: ../../components/parameters/order_id.yaml
   requestBody: 
     content: 
       application/json: 
@@ -58,13 +46,7 @@ patch:
   description: Patch Order
   operationId: patchOrder
   parameters: 
-    - name: orderId
-      in: path
-      description: The ID of the order to update
-      required: true
-      schema: 
-        type: string
-        format: uuid
+    - $ref: ../../components/parameters/order_id.yaml
   requestBody: 
     content: 
       application/json: 
