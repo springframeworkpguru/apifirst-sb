@@ -39,6 +39,8 @@ put:
             $ref: ../../components/schemas/v1/order.yaml
     '400':
       description: Bad Request
+    '404':
+      description: Not Found  
 patch: 
   tags: 
     -  Order
@@ -61,6 +63,8 @@ patch:
             $ref: ../../components/schemas/v1/order.yaml
     '400':
       description: Bad Request
+    '404':
+      description: Not Found
 delete:     
   tags: 
     -  Order
