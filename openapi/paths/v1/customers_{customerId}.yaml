@@ -83,4 +83,6 @@ delete:
     '400':
       description: Bad Request 
     '404':
-      description: Not Found    
+      description: Not Found   
+    '409':
+      description: Conflict
