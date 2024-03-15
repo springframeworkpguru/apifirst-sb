@@ -87,6 +87,6 @@ delete:
     '409':
       description: Conflict
       content: 
-        application/json: 
+        application/problem+json: 
           schema: 
             $ref: ../../components/schemas/Problem.yaml
