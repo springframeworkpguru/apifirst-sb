@@ -18,6 +18,10 @@ get:
       description: Bad Request 
     '404':
       description: Not Found
+      content: 
+        application/problem+json: 
+          schema: 
+            $ref: ../../components/schemas/Problem.yaml
 put:      
   tags: 
     -  Customer
@@ -43,6 +47,10 @@ put:
       description: Bad Request 
     '404':
       description: Not Found
+      content: 
+        application/problem+json: 
+          schema: 
+            $ref: ../../components/schemas/Problem.yaml
 patch:      
   tags: 
     -  Customer
@@ -68,6 +76,10 @@ patch:
       description: Bad Request 
     '404':
       description: Not Found
+      content: 
+        application/problem+json: 
+          schema: 
+            $ref: ../../components/schemas/Problem.yaml
 delete:     
   tags: 
     -  Customer
