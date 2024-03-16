@@ -12,7 +12,7 @@ get:
           schema:
               $ref: ../../components/schemas/v1/order_list.yaml
     '400':
-      description: Bad Request 
+      $ref: ../../components/responses/bad_request_400.yaml
     '404':
       $ref: ../../components/responses/not_found_404.yaml
 post: 
@@ -36,5 +36,4 @@ post:
           description: Path to the created Order
           example: /v1/orders/27ca5995-f6e1-46bb-8f18-52458b7ed96e
     '400':
-      description: Bad Request
-      $ref: ../../components/responses/Problem.yaml    
+      $ref: ../../components/responses/bad_request_400.yaml
