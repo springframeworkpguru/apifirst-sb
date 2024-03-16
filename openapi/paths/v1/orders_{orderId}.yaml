@@ -14,13 +14,9 @@ get:
           schema:
             $ref: ../../components/schemas/v1/order.yaml
     '400':
-      description: Bad Request 
+      $ref: ../../components/responses/bad_request_400.yaml
     '404':
-      description: Not Found
-      content: 
-        application/problem+json: 
-          schema: 
-            $ref: ../../components/schemas/Problem.yaml  
+      $ref: ../../components/responses/not_found_404.yaml 
 put: 
   tags: 
     -  Order
@@ -42,13 +38,9 @@ put:
           schema:
             $ref: ../../components/schemas/v1/order.yaml
     '400':
-      description: Bad Request
+      $ref: ../../components/responses/bad_request_400.yaml
     '404':
-      description: Not Found  
-      content: 
-        application/problem+json: 
-          schema: 
-            $ref: ../../components/schemas/Problem.yaml
+      $ref: ../../components/responses/not_found_404.yaml
 patch: 
   tags: 
     -  Order
@@ -70,13 +62,9 @@ patch:
           schema:
             $ref: ../../components/schemas/v1/order.yaml
     '400':
-      description: Bad Request
+      $ref: ../../components/responses/bad_request_400.yaml
     '404':
-      description: Not Found
-      content: 
-        application/problem+json: 
-          schema: 
-            $ref: ../../components/schemas/Problem.yaml  
+      $ref: ../../components/responses/not_found_404.yaml
 delete:     
   tags: 
     -  Order
@@ -90,10 +78,6 @@ delete:
     '204':
       description: No Content
     '400':
-      description: Bad Request 
+      $ref: ../../components/responses/bad_request_400.yaml
     '404':
-      description: Not Found  
-      content: 
-        application/problem+json: 
-          schema: 
-            $ref: ../../components/schemas/Problem.yaml  
+      $ref: ../../components/responses/not_found_404.yaml

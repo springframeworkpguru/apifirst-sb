@@ -15,13 +15,9 @@ get:
           schema:
             $ref: ../../components/schemas/v1/customer.yaml
     '400':
-      description: Bad Request 
+      $ref: ../../components/responses/bad_request_400.yaml
     '404':
-      description: Not Found
-      content: 
-        application/problem+json: 
-          schema: 
-            $ref: ../../components/schemas/Problem.yaml
+      $ref: ../../components/responses/not_found_404.yaml
 put:      
   tags: 
     -  Customer
@@ -44,13 +40,9 @@ put:
           schema:
             $ref: ../../components/schemas/v1/customer.yaml
     '400':
-      description: Bad Request 
+      $ref: ../../components/responses/bad_request_400.yaml
     '404':
-      description: Not Found
-      content: 
-        application/problem+json: 
-          schema: 
-            $ref: ../../components/schemas/Problem.yaml
+      $ref: ../../components/responses/not_found_404.yaml
 patch:      
   tags: 
     -  Customer
@@ -73,13 +65,9 @@ patch:
           schema:
             $ref: ../../components/schemas/v1/customer.yaml
     '400':
-      description: Bad Request 
+      $ref: ../../components/responses/bad_request_400.yaml
     '404':
-      description: Not Found
-      content: 
-        application/problem+json: 
-          schema: 
-            $ref: ../../components/schemas/Problem.yaml
+      $ref: ../../components/responses/not_found_404.yaml
 delete:     
   tags: 
     -  Customer
@@ -93,16 +81,8 @@ delete:
     '204':
       description: No Content
     '400':
-      description: Bad Request 
+      $ref: ../../components/responses/not_found_404.yaml
     '404':
-      description: Not Found  
-      content: 
-        application/problem+json: 
-          schema: 
-            $ref: ../../components/schemas/Problem.yaml 
+      $ref: ../../components/responses/not_found_404.yaml
     '409':
-      description: Conflict
-      content: 
-        application/problem+json: 
-          schema: 
-            $ref: ../../components/schemas/Problem.yaml
+      $ref: ../../components/responses/conflict_409.yaml

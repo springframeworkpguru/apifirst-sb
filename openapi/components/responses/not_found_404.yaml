@@ -1,0 +1,6 @@
+description: >-
+  Requested Resource was not found. 
+content:
+  application/problem+json:
+    schema:
+      $ref: ../schemas/common/zanlando-problem.yaml
