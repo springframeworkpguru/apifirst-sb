@@ -17,7 +17,7 @@ get:
     '400':
       description: Bad Request 
     '404':
-      description: Not Found
+      $ref: ../../components/responses/not_found_404.yaml
 put:      
   tags: 
     -  Customer
@@ -42,7 +42,7 @@ put:
     '400':
       description: Bad Request 
     '404':
-      description: Not Found
+      $ref: ../../components/responses/not_found_404.yaml
 patch:      
   tags: 
     -  Customer
@@ -67,7 +67,7 @@ patch:
     '400':
       description: Bad Request 
     '404':
-      description: Not Found
+      $ref: ../../components/responses/not_found_404.yaml
 delete:     
   tags: 
     -  Customer
@@ -83,7 +83,6 @@ delete:
     '400':
       description: Bad Request 
     '404':
-      $ref: ../../components/responses/Problem.yaml
-
+      $ref: ../../components/responses/not_found_404.yaml
     '409':
       description: Conflict
