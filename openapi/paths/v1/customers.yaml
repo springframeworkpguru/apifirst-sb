@@ -12,11 +12,7 @@ get:
           schema: 
             $ref: ../../components/schemas/v1/customer_list.yaml  
     '404': 
-      description: Not Found
-      content: 
-        application/json: 
-          schema: 
-            $ref: ../../components/schemas/Problem.yaml
+      $ref: ../../components/responses/not_found_404.yaml
 post: 
   tags: 
     -  Customer

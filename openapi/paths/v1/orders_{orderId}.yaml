@@ -16,7 +16,7 @@ get:
     '400':
       description: Bad Request 
     '404':
-      description: Not Found
+      $ref: ../../components/responses/not_found_404.yaml
 put: 
   tags: 
     -  Order
@@ -40,7 +40,7 @@ put:
     '400':
       description: Bad Request
     '404':
-      description: Not Found  
+      $ref: ../../components/responses/not_found_404.yaml
 patch: 
   tags: 
     -  Order
@@ -64,7 +64,7 @@ patch:
     '400':
       description: Bad Request
     '404':
-      description: Not Found
+      $ref: ../../components/responses/not_found_404.yaml
 delete:     
   tags: 
     -  Order
@@ -80,4 +80,4 @@ delete:
     '400':
       description: Bad Request 
     '404':
-      description: Not Found    
+      $ref: ../../components/responses/not_found_404.yaml  

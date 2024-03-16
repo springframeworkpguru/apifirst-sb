@@ -14,7 +14,7 @@ get:
     '400':
       description: Bad Request 
     '404':
-      description: Not Found  
+      $ref: ../../components/responses/not_found_404.yaml
 post: 
   tags: 
     -  Order
