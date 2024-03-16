@@ -12,6 +12,6 @@ get:
           schema:
               $ref: ../../components/schemas/v1/category_list.yaml
     '400':
-      description: Bad Request 
+      $ref: ../../components/responses/bad_request_400.yaml
     '404':
-      description: Not Found  
+      $ref: ../../components/responses/not_found_404.yaml
