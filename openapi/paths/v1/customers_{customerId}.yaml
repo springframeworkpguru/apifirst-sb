@@ -83,6 +83,7 @@ delete:
     '400':
       description: Bad Request 
     '404':
-      description: Not Found   
+      $ref: ../../components/responses/Problem.yaml
+
     '409':
       description: Conflict
