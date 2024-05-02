@@ -11,13 +11,13 @@ properties:
     description: First Name
     minLength: 2
     maxLength: 100
-    example: John
+    example: Puru
   lastName:
     type: string
     description: Last Name
     minLength: 2
     maxLength: 100
-    example: Thompson
+    example: CK
   suffix:
     type: string  
     description: Name Suffix
